@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Ability Stone Calculator for Lost Ark
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This mini-project provides an interface allowing users to simulate the possible engraving actions on an ability stone and proposing the next action to make depending on the objectives entered by the user.
 
-## Available Scripts
+## How does it work ?
 
-In the project directory, you can run:
+The decisionnal algorithm takes the input objectives of the user and compute the probabilities of achieving these objectives and shows them on each engraving line given that would be the next user's try.
+Then at the end of the engraving pannel, the algorithm proposes the next best move to make taking into account the probabilities previously determined.
 
-### `yarn start`
+#### 1. Choose the rarity of the stone
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As you may know, the rarity of the stone provides the number of tries per engraving line on a stone.
+Note: you can modify this setting at any given time, though it will reset the previous sequence of tries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 2. Choose the objectives you wish for the 3 rows
 
-### `yarn test`
+Ideally we want a 6-6-4 for a 4 engraving lines build or a 7-7-4 for a 5 engraving lines build. But if you only look for 1 engraving line on the stone to make a 2 or 3 engraving lines build then you can let the engraving row you dont care about to either 0 or 1. Same with the malus engraving row, the lower the objective is the lower the overall chances to get the stone you want get. So in regards to that fact, you can increase the 3rd row objective during the engraving process considering that you dont care about the malus row or put it to the maximum of the stone capacity.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 3. Inform the interface with the result of your tries
 
-### `yarn build`
+After each engraving try on your stone, input the corresponding result in the engraving pannel on the corresponding row. The algorithm will then compute again the state your stone is into and provide the new percentage of success.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 4. UI output
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At each step, you will see the overall interface being modified in regards to your inputs. You'll also see the chance of success of the next action at each step.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: You can use this caclculator on any given stone even partially engraved since the calculator takes the current state of your stone and not the sequence of tries since it's not relevant for the objective.
