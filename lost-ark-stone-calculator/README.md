@@ -1,6 +1,7 @@
 # Ability Stone Calculator for Lost Ark
 
 This mini-project provides an interface built with react allowing users to simulate the possible engraving actions on an ability stone and proposing the next action to make depending on the objectives entered by the user.
+
 http://Windyspirit.github.io/lost-ark-stone-calculator
 
 ## How does it work ?
