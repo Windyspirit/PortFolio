@@ -6,6 +6,6 @@ Plus d'informations sont disponibles dans le dossier de chaque projet et leur RE
 ### Lost Ark Calculator
 Calculateur procurrant une interface permettant d'optimiser la gravure des pierres d'habilité du jeu Lost Ark
 
-Une visualisation du rendu provisoire de l'interface est disponible à l'adresse :
+Une visualisation du rendu provisoire de l'interface est disponible à l'adresse (partie algo bientot implémentée) :
 
 http://Windyspirit.github.io/lost-ark-stone-calculator
