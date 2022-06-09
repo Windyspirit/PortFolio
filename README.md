@@ -9,7 +9,8 @@ Plus d'informations sont disponibles dans le dossier de chaque projet et leur RE
 Projet conduit à la fin de ma formation en groupe de 5 personnes (plus de détails dans le dossier Apotheose).
 
 La partie back est une API REST produite en WordPress qui n'est plus connectée. 
-Le front dispose de données en dur et une visualisation du rendu de notre site est disponible à l'adresse :
+
+Le front dispose de données en dur permettant une visualisation du rendu de notre site et disponible à l'adresse :
 
 http://Windyspirit.github.io/Spinning-Squid
 
