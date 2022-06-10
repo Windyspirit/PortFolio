@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+}
+
+// or you can import your own font
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+.home-title {
+  font-family: 'Sedgwick Ave Display', cursive;
+}

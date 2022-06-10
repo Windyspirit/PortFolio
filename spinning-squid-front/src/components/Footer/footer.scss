@@ -1,0 +1,29 @@
+@use 'src/styles/vars';
+
+.navFooter {
+  // position: fixed;
+  // float: bottom !important;
+  // bottom: 0;
+  background-color: vars.$black;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  padding: 30px;
+  width: 90%;
+  margin-top: 0;
+
+  .navFooter-link {
+    color: vars.$grey;
+    font-family: 'Righteous';
+  }
+
+  .navFooter-link--active {
+    color: vars.$white;
+  }
+}
+
+@media (max-width: vars.$smallScreen) {
+  .navFooter .navFooter-link {
+    font-size: 0.75em;
+  }
+}
