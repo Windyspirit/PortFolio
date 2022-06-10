@@ -1,0 +1,41 @@
+@use 'src/styles/vars';
+
+.newsletter {
+  font-family: "Righteous";
+
+  .newsletter-title {
+  }
+
+  .newsletter-container {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    color: vars.$white;
+
+    .newsletter-image {
+      width: 40%;
+      height: auto;
+      margin-right: 1em;
+    }
+
+    .newsletter-form {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      align-self: center;
+
+      .newsletter-input {
+        width: 100%;
+      }
+
+      .newsletter-input-message {
+        width: 100%;
+        height: 150px;
+      }
+
+      .newsletter-button {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

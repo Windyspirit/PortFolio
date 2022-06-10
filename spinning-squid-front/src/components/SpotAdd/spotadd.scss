@@ -1,0 +1,228 @@
+@use 'src/styles/vars';
+
+.spotadd-container {
+  color: vars.$white;
+  font-family: "Righteous";
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .spotadd-title {
+    padding: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    color: vars.$orange;
+  }
+  .spotadd-button {
+    margin: 2rem auto;
+  }
+  .spotadd-form {
+    display: flex;
+    flex-direction: column;
+    .spotadd-form-container {
+      display: flex;
+      flex-direction: column;
+      .spotadd-container-title-type {
+        text-align: center;
+        #titleSkatepark {
+          width: 300px;
+        }
+        .spotadd-container-category {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          div {
+            margin-right: 1rem;
+          }
+        }
+      }
+      .spotadd-container-informations {
+        display: flex;
+        flex-direction: row;
+        .spotadd-container-information-adress-image {
+          width: 300px;
+          margin-right: 25vw;
+          .spotadd-container-adress {
+            & input {
+              width: 100%;
+            }
+          }
+          .spotadd-container-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        .spotadd-container-equipment-state {
+          .spotadd-container-equipment {
+            .spotadd-label-equipment {
+              display: flex;
+              flex-direction: row-reverse;
+              align-items: center;
+              justify-content: flex-end;
+            }
+          }
+          .spotadd-container-state {
+            .spotadd-label-state {
+              display: flex;
+              flex-direction: row-reverse;
+              align-items: center;
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+    .div-button {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .spotadd-container {
+    color: vars.$white;
+    font-family: "Righteous";
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .spotadd-title {
+      padding: 1em;
+      font-size: 1.5em;
+      text-align: center;
+      color: vars.$orange;
+    }
+    .spotadd-button {
+      margin: 2rem auto;
+    }
+    .spotadd-form {
+      display: flex;
+      flex-direction: column;
+      .spotadd-form-container {
+        display: flex;
+        flex-direction: column;
+        .spotadd-container-title-type {
+          text-align: center;
+          #titleSkatepark {
+            width: 300px;
+          }
+          .spotadd-container-category {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            div {
+              margin-right: 1rem;
+            }
+          }
+        }
+        .spotadd-container-informations {
+          display: flex;
+          flex-direction: column;
+          .spotadd-container-information-adress-image {
+            width: 300px;
+            margin-right: 0;
+            .spotadd-container-adress {
+              & input {
+                width: 100%;
+              }
+            }
+            .spotadd-container-image {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+          .spotadd-container-equipment-state {
+            .spotadd-container-equipment {
+              .spotadd-label-equipment {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: flex-end;
+              }
+            }
+            .spotadd-container-state {
+              .spotadd-label-state {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .spotadd-container {
+    .spotadd-title {
+    }
+    .spotadd-button {
+    }
+    .spotadd-form {
+      display: flex;
+      flex-direction: column;
+      .spotadd-form-container {
+        display: flex;
+        flex-direction: column;
+        .spotadd-container-title-type {
+          text-align: center;
+          #titleSkatepark {
+            width: 300px;
+          }
+          .spotadd-container-category {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div {
+              margin-right: 1rem;
+            }
+          }
+        }
+        .spotadd-container-informations {
+          display: flex;
+          flex-direction: column;
+          .spotadd-container-information-adress-image {
+            width: 300px;
+            margin-right: 0;
+            .spotadd-container-adress {
+              & input {
+                width: 100%;
+              }
+            }
+            .spotadd-container-image {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+          .spotadd-container-equipment-state {
+            .spotadd-container-equipment {
+              .spotadd-label-equipment {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: flex-end;
+              }
+            }
+            .spotadd-container-state {
+              .spotadd-label-state {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

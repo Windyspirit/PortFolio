@@ -1,0 +1,49 @@
+@use 'src/styles/vars';
+
+.notFound {
+  font-family: "Righteous";
+
+  .notFound-container {
+    margin: auto;
+    max-width: 800px;
+    color: vars.$white;
+
+    .notFound-image {
+      display: flex;
+      margin: auto;
+      width: 800px;
+      height: auto;
+    }
+
+    .notFound-p {
+      text-align: center;
+      margin: 2em;
+      font-size: 1.3em;
+    }
+
+    .button {
+    }
+  }
+}
+
+@media (max-width: vars.$smallScreen) {
+  .notFound {
+    .notFound-container {
+      .notFound-image {
+        width: 300px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: vars.$smallScreen +1) and (max-width: vars.$mediumScreen) {
+  .notFound {
+    .notFound-container {
+      .notFound-image {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+}

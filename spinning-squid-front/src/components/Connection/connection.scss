@@ -1,0 +1,76 @@
+@use 'src/styles/vars';
+
+.connection {
+  font-family: 'Righteous';
+
+  .container-forms {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    color: vars.$white;
+  
+    .form-register {
+      width: 50%;
+      padding: 1em;
+      margin-right: 2em;
+    }
+
+    .form-connection {
+      width: 50%;
+      padding: 1em;
+      margin-left: 2em;
+    }
+
+    .button {
+      margin-top: 0.5em;
+    }
+  }
+}
+.form-title {
+  color: vars.$white;
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: solid 1px vars.$orange;
+}
+.form-input {
+  width: 100%;
+  margin: 0.5em 0;
+}
+
+@media (max-width: vars.$smallScreen) {
+
+  .connection {
+
+    .container-forms {
+      flex-direction: column-reverse;
+      align-items: center;
+  
+      .form-register,
+      .form-connection {
+        margin: 1em 0;
+        width: 98%;
+      }
+    }
+  }
+  .form-title {
+    font-size: 1em;
+  }
+}
+@media (min-width: vars.$smallScreen +1 ) and (max-width: vars.$mediumScreen) {
+
+  .connection {
+
+    .container-forms {
+      flex-direction: column-reverse;
+      align-items: center;
+  
+      .form-register,
+      .form-connection {
+        margin: 1em 0;
+        width: 70%;
+      }
+    }
+  }
+}

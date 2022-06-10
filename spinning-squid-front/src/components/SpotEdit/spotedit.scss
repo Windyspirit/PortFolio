@@ -1,0 +1,132 @@
+@use 'src/styles/vars';
+
+.spotadd-container {
+  .spotadd-form {
+    .div-button {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// .spotadd-container {
+//   max-width: 1000px;
+//   margin: auto;
+//   font-family: 'Righteous';
+
+//   .spotadd-title {
+//     padding: 1em;
+//     font-size: 1.5em;
+//     text-align: center;
+//     color: vars.$orange;
+//   }
+
+//   .spotadd-form {
+//     margin: auto;
+//     color: vars.$white;
+//     padding: 1em;
+
+//     .spotadd-container-title {
+//       height: 100%;
+//       text-align: center;
+//       margin-bottom: 2em;
+
+//       .spotadd-input-title {
+//         width: 30%;
+//         margin-bottom: 1.5em;
+//       }
+//     }
+
+//     .spotadd-container-category {
+//       height: 100%;
+//       text-align: center;
+//       margin-bottom: 1.5em;
+
+//       .spotadd-label-category {
+//         margin: 0 3em;
+//       }
+
+//       .spotadd-check-category {
+//         margin-left: 1em;
+//         cursor: pointer;
+//       }
+//     }
+
+//     .spotadd-container-adress {
+//       width: 50%;
+//       height: 200px;
+//       float: left;
+
+//       .spotadd-input {
+//         width: 70%;
+//         margin: 0.2em 0 0.2em 6em;
+//       }
+//     }
+
+//     .spotadd-container-equipment {
+//       width: 50%;
+//       height: 200px;
+//       float: right;
+
+//       .spotadd-label-equipment {
+//         display: flex;
+//         align-items: center;
+//         flex-direction: row-reverse;
+//         justify-content: flex-end;
+//         margin: 0.2em 35%;
+//         width: 100%;
+//       }
+
+//       .spotadd-check-equipment{
+//         margin-right: 0.7em;
+//         cursor: pointer;
+//       }
+//     }
+
+//     .spotadd-container-image {
+//       width: 50%;
+//       height: 200px;
+//       float: left;
+
+//       .spotadd-label-image {
+//         margin-left: 4em;
+//       }
+
+//       .spotadd-input-image {
+//         margin-left: 3em;
+//         cursor: pointer;
+//       }
+//     }
+
+//     .spotadd-container-state {
+//       width: 50%;
+//       height: 200px;
+//       float: right;
+
+//       .spotadd-label-state {
+//         display: flex;
+//         align-items: center;
+//         flex-direction: row-reverse;
+//         justify-content: flex-end;
+//         margin: 0.2em 35%;
+//         width: 100%;
+//       }
+
+//       .spotadd-radio {
+//         margin-right: 0.7em;
+//         cursor: pointer;
+//       }
+//     }
+
+//     .div-button {
+//       .spotadd-button {
+//     }
+
+//     .spotDelete-button {
+//     }
+
+//     }
+//     }
+
+//   }
+

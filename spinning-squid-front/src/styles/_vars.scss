@@ -1,0 +1,123 @@
+$black: #000000;
+$darkGrey: #292929;
+$grey: #6e6b6b;
+$lightGrey: #c2c2c2;
+$white: #ffffff;
+$orange: #ff8552;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sedgwick+Ave+Display&display=swap');
+
+$smallScreen: 480px;
+$mediumScreen: 800px;
+$largeScreen: 1500px;
+
+// Generic class
+.main-container {
+  min-height: calc(100vh - 120px - 70px);
+}
+.block {
+  height: auto;
+  max-width: 100%;
+  background-color: $grey;
+}
+.title {
+  color: $white;
+  text-align: center;
+  padding: 1em;
+  font-size: 3em;
+  font-family: 'Sedgwick Ave Display';
+}
+.button {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5em 1em;
+  background-color: $orange;
+  border-radius: 50px;
+  border: none;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous';
+  color: black;
+  box-shadow: 0 0 40px 40px $orange inset, 0 0 0 0 $orange;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $orange inset, 0 0 10px 4px $orange;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.add-image {
+  margin: 1.5em auto 1em;
+  background-color: $orange;
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Righteous';
+  color: black;
+  box-shadow: 0 0 40px 40px $orange inset, 0 0 0 0 $orange;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $orange inset, 0 0 10px 4px $orange;
+  }
+}
+.list {
+  display: flex;
+  align-items: center;
+  margin: 1em auto 0;
+  max-width: 1200px;
+}
+.list-item {
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(236, 236, 236, 0.8);
+}
+.list-item-image {
+  border: solid 1px;
+  height: 80px;
+  width: 80px;
+  margin-right: 1em;
+}
+.list-item-description {
+  margin: auto;
+}
+// composant en attente de chargement
+.loading-wheel {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 5rem;
+}
+
+@media (min-width: $largeScreen) {
+  .main-container {
+    width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $smallScreen) {
+  .title {
+    padding: 1em;
+    font-size: 1.5em;
+  }
+}
+@media (max-width: $mediumScreen) {
+  .title {
+    padding: 1em;
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: $smallScreen) {
+  .add-image {
+    width: 200px;
+  }
+}

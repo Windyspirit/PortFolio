@@ -1,0 +1,198 @@
+@use 'src/styles/vars';
+#community {
+  display: flex;
+  flex-direction: column;
+  font-family: "Righteous";
+
+  .community-loading-wheel {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .community-post {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    .button-post {
+      font-size: 1rem;
+      width: 120px;
+      height: 50px;
+    }
+  }
+  .community-eventList {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .eventList-item {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.25);
+
+    .item-image {
+      height: 300px;
+      width: auto;
+    }
+    .item-description {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 3rem;
+
+      .item-title {
+        color: vars.$orange;
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .community-list-article :nth-child(2n) {
+    .eventList-item {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media (max-width: 873px) {
+  #community {
+    #community-img {
+      width: 80vw;
+      height: auto;
+    }
+    .eventList-item {
+      flex-direction: column !important;
+      margin: 1rem;
+      .item-image {
+        margin: 0 auto 0;
+        width: 100% !important;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+      }
+      .item-description {
+        width: 100% !important;
+        height: 5rem !important;
+        --responsive: calc(
+          (var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420))
+        );
+        --max-font: 22;
+        --min-font: 12;
+        font-size: var(--responsive);
+        color: white;
+        text-shadow: black 1px 1px 1px;
+      }
+      .description-link {
+        text-align: center;
+      }
+    }
+    //     .eventList-item {
+    //       flex-direction: row;
+    //       margin: 1rem;
+
+    //       .item-image {
+    //         margin: 0 auto 0;
+    //         width: 7rem !important;
+    //         max-width: 350px !important;
+    //         min-width: 100px !important;
+    //       }
+
+    //       .item-description {
+    //         width: 7rem !important;
+    //         --responsive: calc(
+    //           (var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) *
+    //             ((100vw - 420px) / (1200 - 420))
+    //         );
+    //         --max-font: 30;
+    //         --min-font: 12;
+    //         font-size: var(--responsive);
+    //         color: white;
+    //         text-shadow: black 1px 1px 1px;
+    //       }
+  }
+}
+//-------------------------------------------------
+//component AddPost
+//-------------------------------------------------
+#addpost {
+  font-family: "Righteous";
+  color: vars.$white;
+
+  .addpost-block {
+    display: flex;
+    margin: auto;
+    width: 70%;
+
+    .addpost-charateristics {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      .addpost-input {
+        margin: 0.5em 0;
+        width: 100%;
+      }
+    }
+
+    .addpost-description {
+      width: 50%;
+      height: fit-content;
+      text-align: center;
+
+      #addpost-description {
+        width: 90%;
+        min-height: 20vh;
+        margin: 1.5em 0;
+      }
+    }
+  }
+}
+
+@media (max-width: vars.$smallScreen) {
+  #addpost {
+    .addpost-block {
+      flex-direction: column;
+      align-items: center;
+      width: 98%;
+
+      .addpost-charateristics {
+        width: 100%;
+      }
+
+      .addpost-description {
+        width: 100%;
+
+        #addpost-description {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: vars.$smallScreen + 1) and (max-width: vars.$mediumScreen) {
+  #addpost {
+    .addpost-block {
+      flex-direction: column;
+      align-items: center;
+      width: 98%;
+
+      .addpost-charateristics {
+        width: 70%;
+      }
+
+      .addpost-description {
+        width: 100%;
+
+        #addpost-description {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

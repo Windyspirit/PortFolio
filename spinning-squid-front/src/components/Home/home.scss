@@ -1,0 +1,172 @@
+@use 'src/styles/vars';
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sedgwick+Ave+Display&display=swap');
+
+.home-container {
+
+  .home-header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .home-logo {
+      position: absolute;
+      top: 0;
+      height: 45%;
+      width: 25%;
+    }
+
+    .home-title {
+      color: vars.$orange;
+      position: absolute;
+      --base: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
+      --max-font: 110;
+      --min-font: 30;
+      font-size: var(--base);
+      font-family: 'Sedgwick Ave Display';
+      text-shadow: black 10px 10px 10px;
+      text-align: center;
+      margin: 1em auto;
+    }
+
+    .home-image {
+      width: 100%;
+      height: auto;
+      --base: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
+      --max-font: 110;
+      --min-font: 30;
+      font-size: var(--base);
+    }
+  }
+
+  .home-p {
+    color: vars.$white;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 1em;
+    font-family: 'Righteous';
+  }
+
+  .home-nav {
+
+    .home-nav-container {
+      display: flex;
+      align-items: center;
+      min-width: 500px;
+      width: 50%;
+      justify-content: center;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .home-nav-container:hover .home-nav-image {
+      filter: grayscale(100%) blur(10px);
+      transition: 0.5s;
+    }
+
+    .home-nav-image {
+      width: 100%;
+      height: auto;
+      margin: 1em auto;
+    }
+
+    .home-nav-description {
+      color: vars.$white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      text-align: center;
+      color: transparent;
+      --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
+        --max-font: 35;
+        --min-font: 20;
+        font-size: var(--responsive);
+      font-weight: 300;
+      text-transform: uppercase;
+      transition: 0.5s;
+      font-family: 'Sedgwick Ave Display';
+    }
+
+    .home-nav-container:hover .home-nav-description {
+      line-height: 50px;
+      color: white;
+      float: left;
+      margin: 0;
+      text-shadow: black 10px 10px 10px;
+      font-family: 'Sedgwick Ave Display';
+
+    }
+
+  }
+
+}
+@media (max-width: vars.$smallScreen) {
+
+  .home-container {
+
+    .home-p {
+      font-size: 0.8em;
+    }
+  }
+
+}
+@media (max-width: vars.$mediumScreen) {
+
+  .home-container {
+
+    .home-p {
+      font-size: 1.3em;
+    }
+
+    .home-header {
+
+      .home-logo {
+        display: none;
+      }
+    }
+
+    .home-nav {
+      .home-nav-container {
+        display: flex;
+        align-items: flex-start;
+        width: 90%;
+      }
+      .home-nav-container:hover,
+      .home-nav-container:hover .home-nav-image,
+      .home-nav-container:hover .home-nav-description {
+        pointer-events: none;
+        filter: none;
+      }
+
+      .home-nav-description {
+        color: vars.$white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        min-width: 100%;
+        --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
+          --max-font: 35;
+          --min-font: 20;
+          font-size: var(--responsive);
+        font-weight: 300;
+        text-transform: none;
+        transition: none;
+      }
+
+      .home-nav-container:hover .home-nav-description {
+        line-height: 1em;
+        text-shadow: none;
+      }
+
+    }
+  }
+
+}
+
+
