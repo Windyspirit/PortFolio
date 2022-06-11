@@ -1,6 +1,6 @@
 # PortFolio
 
-(!important) Plus d'informations sont disponibles dans le dossier de chaque projet et leur README respectifs 
+Plus d'informations sont disponibles dans le dossier de chaque projet et leur README respectifs (!important)
 
 ## Projets
 
