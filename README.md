@@ -12,7 +12,7 @@ L'objectif était de fournir une interface à une communauté de skateurs leur p
 - se connecter à leurs compte personnel
 - renseigner des emplacements où pratiquer leur sport favori
 - pouvoir s'échanger du matériel entre eux
-- consulter une page événementielle proposant des rencontres.
+- consulter une page événementielle proposant des rencontres
 
 La partie back est une API REST produite en WordPress qui n'est plus connectée. 
 
