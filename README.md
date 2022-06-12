@@ -9,7 +9,7 @@ Plus d'informations sont disponibles dans le dossier de chaque projet et leur RE
 Projet de fin de formation en groupe de 5 personnes de création d'une application web from scratch.
 L'objectif était de fournir une interface à une communauté de skateurs leur permettant de :
 
-- se connecter
+- se connecter à leur compte personnel
 - renseigner des emplacements où pratiquer leur sport favori
 - pouvoir s'échanger du matériel entre eux
 - consulter une page événementielle proposant des rencontres.
